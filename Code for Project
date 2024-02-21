@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/515aecdffd.js"crossorgin"anonymous"></script>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <nav>
+  <label for="id-show-menu" class="show-menu">
+    <div> menu</div>
+    <div class="nav-icon">
+      <i class="fa fa-navicon"></i>
+    </div>
+      </label>
+      <input type="checkbox" id="id-show-menu" class="checkbox-menu" role="button">
+  <div class="menu-block">
+    <ul class="navUL">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Departments</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  </body>
+</html>
+
+CSS
+h1{
+  color: yellowgreen;
+  position: sticky;
+  text-align: center;
+  top: 250px;
+  font-size: 70px;
+ text-shadow: 3px 3px whitesmoke; 
+}
+
+body {
+ background:linear-gradient(to right, orangered 50%, #6600ff 20% 40%); 
+}
+
+.show-menu {
+  cursor: pointer;
+}
+
+input.checkbox-menu[type="checkbox"] {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input.checkbox-menu[type="checkbox"]:checked ~ div.menu-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-icon {
+  display: block;
+  font-size: 1.5em;
+  padding: 0.5em;
+  vertical-align: middle;  
+}
+
+.menu-block {
+  display: block;
+  opacity: 1;
+  vertical-align: middle;
+  visibility: hidden;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+ul.navUL {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navUL li {
+  display: block;
+  padding: 0px 5px;
+}
+
+ul.navUL li a {
+  color: #2c5d63;
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+}
+
+ul.navUL li a:hover {
+  color: #000000;
+  text-decoration: none;
+}
